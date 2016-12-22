@@ -94,6 +94,7 @@
 	        _react2.default.createElement(
 	          _reactRouter.Route,
 	          { path: "/", component: _Root.Root },
+	          _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home.Home }),
 	          _react2.default.createElement(_reactRouter.Route, { path: "user", component: _User.User }),
 	          _react2.default.createElement(_reactRouter.Route, { path: "home", component: _Home.Home })
 	        ),
@@ -104,23 +105,6 @@
 	
 	  return App;
 	}(_react2.default.Component);
-	
-	// class App extends React.Component {
-	//
-	//   render(){
-	//     return(
-	//       <Root>
-	//           <Router history={browserHistory}>
-	//             <Route path={"/"} component={Root} >
-	//                 <IndexRoute component={Root}/>
-	//                 <Route path={"user"} component={User}></Route>
-	//                 <Route path={"home"} component={Home}></Route>
-	//             </Route>
-	//           </Router>
-	//       </Root>
-	//     );
-	//   }
-	// }
 	
 	(0, _reactDom.render)(_react2.default.createElement(App, null), window.document.getElementById('app'));
 

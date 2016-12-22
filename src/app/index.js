@@ -23,21 +23,4 @@ class App extends React.Component {
   }
 }
 
-// class App extends React.Component {
-//
-//   render(){
-//     return(
-//       <Root>
-//           <Router history={browserHistory}>
-//             <Route path={"/"} component={Root} >
-//                 <IndexRoute component={Root}/>
-//                 <Route path={"user"} component={User}></Route>
-//                 <Route path={"home"} component={Home}></Route>
-//             </Route>
-//           </Router>
-//       </Root>
-//     );
-//   }
-// }
-
 render(<App />, window.document.getElementById('app'));
