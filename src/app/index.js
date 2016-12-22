@@ -17,7 +17,6 @@ class App extends React.Component {
             <Route path={"user"} component={User}/>
             <Route path={"home"} component={Home}/>
           </Route>
-          <Route path={"home"} component={Home}/>
         </Router>
     );
   }
